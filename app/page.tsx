@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Hero from "./Components/Hero";
-import ClientsPartnersSection from "./Components/ClientsPartnersSection";
 import Industries from "./Components/Industries";
 import Solutions from "./Components/Solutions";
 import VisionMission from "./Components/VisionMission";
@@ -72,7 +71,6 @@ const Page = () => {
       <AboutUs />
       <Industries />
       <VisionMission />
-      {/* <ClientsPartnersSection /> */}
       <Solutions />
     </div>
   );
