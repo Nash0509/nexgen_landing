@@ -89,7 +89,6 @@ const Page = () => {
           Reach out to us for any inquiries about our products and services.
         </p>
       </div>
-      5
       <div className="flex flex-wrap gap-4 w-full max-w-7xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -158,7 +157,7 @@ const Page = () => {
         transition={{ duration: 0.5 }}
         className="bg-gray-800 bg-opacity-90 shadow-xl rounded-lg p-8 w-full max-w-7xl flex flex-wrap justify-center gap-8"
       >
-        <div className="flex-1 min-w-[350px] max-w-lg">
+        <div className="flex-1">
           <h2 className="text-3xl font-semibold text-center text-white mb-6">
             Send <span className="text-red-500">a</span> query
           </h2>

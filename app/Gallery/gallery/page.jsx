@@ -77,20 +77,21 @@ const Page = () => {
           <video
             id="myVideo"
             height="240"
+            controls
             muted
             className="w-full h-auto rounded-lg"
           >
             <source src="/wire.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+          {/* <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
             <button
               onClick={() => document.getElementById("myVideo").play()}
               className="bg-white text-black px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-gray-300 transition"
             >
               ▶ Play Video
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -115,7 +116,7 @@ const ImageGallery = ({ images, heading, direction }) => {
           className="flex gap-4 cursor-pointer"
           initial={{ x: direction === "rtl" ? "30%" : "-30%" }}
           animate={{ x: direction === "rtl" ? "-30%" : "30%" }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
         >
           {images.concat(images).map((image, index) => (
             <div
